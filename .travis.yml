@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '10'
+deploy:
+  provider: npm
+  email: cardinalby@gmail.com
+  skip_cleanup: true
+  api_key:
+    secure: Xb33a/ZHmJEinKcXpjE8Fj2rNzr8rwEhA/1ajlhuCThZfwfhTgdlv6gG+IOUjKn6XTA2Ecb8Rekb4WnO+ASL7xJmko/EWd9/B6dR7ngWAWCu72q8M3rChRlYZAReoDUQbPYAbaTACAO/yhVLlfQJgkfAn0nycmAeVy5lZmMRBIR+E9Xy+fOqKzf78qmq9KIFeNr9nT/+dzkU6nW/aVd+uU5z4t1dRPYTIPxHZSNa4HuC0CrIpq2Zc8XIawBaGjRukE6qskquqhAf8nJ1E0j4ogFTrf8/JI3vZZpL+9kVx9QSQ1Oa2wfTSkR1M4r1bM4kd8NgzHvOUVnwcrMlramJYbkH02WVDj5P3j4WNg1RCzkadQUas4CnXYGfy8V4Oyu5yQQ4NFEibpvS2te1yTjJsskzpaTaE3AHKRlbf2npOoFDBy7ctYei+VPFFoWDYJe26mgbmKUvNyRnyUf8exOhWczk/Pex3WXBIfyx5dlpLLJjMSDi10z2lzEC/28NKY5AGsuYrj/d/WXKiOHuFzT4mrvDjC0LZgCImzJVjo8k3EwGmgy3WeBkbjMaVjGd5CcG/mwq3uGCA+zRhlW3wSTZTXuSgoa8a4ketdt6+rUZiAFOyThl3I3Yhc55fCKxhTIl4hHobQw+p+MOEIpPIKp2/z0P0GZaBqm2/hG7QnUjvtk=
+  on:
+    tags: true
+    repo: cardinalby/webext-buildtools-integrated-builder
