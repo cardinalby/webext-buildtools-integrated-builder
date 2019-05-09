@@ -1,6 +1,6 @@
 {
   "name": "webext-buildtools-integrated-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Complete solution to build and deploy your Web Extension",
   "main": "dist",
   "keywords": [
