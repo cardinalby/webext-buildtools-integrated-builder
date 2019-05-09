@@ -4,8 +4,8 @@ import ChromeWebstoreBuilder from 'webext-buildtools-chrome-webstore-builder';
 import DirReaderBuilder, {DirReaderBuildResult} from 'webext-buildtools-dir-reader-mw';
 import FirefoxAddonsBuilder from 'webext-buildtools-firefox-addons-builder';
 import { AbstractCompositeBuilder, BufferBuildAsset, createTempDir, FileBuildAsset, IAbstractSimpleBuilderClass, logMethodProxy, passOnAsset, SubBuilderRecord } from 'webext-buildtools-utils';
-import { IntegratedBuildResult } from './buildResult';
 import { IIntegratedOptions } from '../declarations/options';
+import { IntegratedBuildResult } from './buildResult';
 
 // noinspection JSUnusedGlobalSymbols
 /**
