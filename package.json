@@ -1,6 +1,6 @@
 {
   "name": "webext-buildtools-integrated-builder",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Complete solution to build and deploy your Web Extension",
   "main": "dist",
   "keywords": [
@@ -33,11 +33,11 @@
     "LICENSE"
   ],
   "dependencies": {
-    "webext-buildtools-chrome-crx-builder": "^1.0.4",
-    "webext-buildtools-chrome-webstore-builder": "^1.0.2",
-    "webext-buildtools-dir-reader-mw": "^1.0.3",
-    "webext-buildtools-firefox-addons-builder": "^1.0.2",
-    "webext-buildtools-utils": "^1.0.2"
+    "webext-buildtools-chrome-crx-builder": "^1.0.5",
+    "webext-buildtools-chrome-webstore-builder": "^1.0.4",
+    "webext-buildtools-dir-reader-mw": "^1.0.4",
+    "webext-buildtools-firefox-addons-builder": "^1.0.3",
+    "webext-buildtools-utils": "^1.0.3"
   },
   "devDependencies": {
     "webext-buildtools-builder-types": "^1.0.6",
