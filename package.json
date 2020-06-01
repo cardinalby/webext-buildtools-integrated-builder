@@ -1,6 +1,6 @@
 {
   "name": "webext-buildtools-integrated-builder",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Complete solution to build and deploy your Web Extension",
   "main": "dist",
   "keywords": [
@@ -33,17 +33,17 @@
     "LICENSE"
   ],
   "dependencies": {
-    "webext-buildtools-chrome-crx-builder": "^1.0.5",
-    "webext-buildtools-chrome-webstore-builder": "^1.0.4",
-    "webext-buildtools-dir-reader-mw": "^1.0.4",
-    "webext-buildtools-firefox-addons-builder": "^1.0.3",
-    "webext-buildtools-utils": "^1.0.3"
+    "webext-buildtools-chrome-crx-builder": "^1.0.7",
+    "webext-buildtools-chrome-webstore-builder": "^1.0.5",
+    "webext-buildtools-dir-reader-mw": "^1.0.5",
+    "webext-buildtools-firefox-addons-builder": "^1.0.4",
+    "webext-buildtools-utils": "^1.0.4"
   },
   "devDependencies": {
-    "webext-buildtools-builder-types": "^1.0.6",
+    "webext-buildtools-builder-types": "^1.0.8",
     "@types/node": "^10.12.20",
     "@types/archiver": "^2.1.3",
-    "tslint": "^5.17.0",
+    "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.2.4"
   },
