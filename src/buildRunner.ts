@@ -6,6 +6,7 @@ import { IntegratedBuilder } from './builder';
 // noinspection JSUnusedGlobalSymbols
 /**
  * Helper function to initiate build just by calling one functions providing all options in one object
+ * Returns exit code
  */
 export async function startBuild(options: IBuildRunnerOptions)
 {
@@ -61,22 +62,17 @@ export async function startBuild(options: IBuildRunnerOptions)
         }
     }
 
-    try {
-        const result = await builder.build();
+    const result = await builder.build();
 
-        if (result.errors.length > 0) {
-            logger.error(`Build finished with ${result.errors.length} errors`);
-            for (const errItem of result.errors) {
-                logger.error(`${errItem.error} in ${errItem.targetName} builder`);
-            }
-            process.exit(1);
-        } else {
-            logger.info('Build successfully finished: %o', result);
+    if (result.errors.length > 0) {
+        const message = `Build finished with ${result.errors.length} errors`;
+        logger.error(message);
+        for (const errItem of result.errors) {
+            logger.error(`${errItem.error} in ${errItem.targetName} builder`);
         }
-    }
-    catch (e) {
-        logger.error('Build promise was rejected with error: ' + e.toString());
-        process.exit(1);
+        throw new Error(message);
+    } else {
+        logger.info('Build successfully finished: %o', result);
     }
 }
 
