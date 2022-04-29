@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.com/cardinalby/webext-buildtools-integrated-builder.svg?branch=master)](https://travis-ci.com/cardinalby/webext-buildtools-integrated-builder)
+[![npm-publish](https://github.com/cardinalby/webext-buildtools-integrated-builder/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/cardinalby/webext-buildtools-integrated-builder/actions/workflows/npm-publish.yml)
+
 ## Introduction
 This package for **Node.js** provides complete solution to build and deploy your 
 [Web Extension](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions).
@@ -13,11 +14,14 @@ offline distribution of Chrome extension
 3. Upload and publish on **Chrome Web Store**, save published **crx**
 ([ChromeWebstoreBuilder](https://www.npmjs.com/package/webext-buildtools-chrome-webstore-builder)) 
 4. Deploy to **Firefox Add-ons**, sign **xpi** for offline distribution
-([FirefoxAddonsBuilder](https://www.npmjs.com/package/webext-buildtools-firefox-addons-builder)) 
+([FirefoxAddonsBuilder](https://www.npmjs.com/package/webext-buildtools-firefox-addons-builder))
 
-Also there is
-[OperaAddonsUploadBuilder](https://www.npmjs.com/package/webext-buildtools-opera-addons-builder)
-which stays apart and isn't included to this package because of it's experimental status.  
+## GitHub Actions
+
+If you are interested in building CI/CD solution for Web Extension using GitHub Actions it's better
+to use the dedicated actions for it instead.
+
+Please read the ["Releasing WebExtension using GitHub Actions"](https://cardinalby.github.io/blog/post/github-actions/webext/1-introduction/) article to learn the details.
 
 ## Installation
 `npm install webext-buildtools-integrated-builder`
